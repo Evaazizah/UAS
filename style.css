@@ -2,30 +2,55 @@ body {
     font-family: Arial, sans-serif;
     background-image: url(images/pswt.jpg);
     background-size: cover;
-    text-decoration: white;
     margin: 0;
-    padding: 300px;
+    padding: 200px;
 }
 .menu {
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 10x 0;
     text-align: center;
 }
-.a {
+.menu a {
     color: white;
-    text-decoration: white;
+    text-decoration: none;
     font-weight: bold;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 .content {
     text-align: center;
     margin: 50px;
 }
 form {
-    background-color: rgb(49, 182, 206);
-    padding: 40px;
+    background-image: url(images/pswt.jpgs);
+    padding: 100px;
     border-radius: 50px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 50px black;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1pxs solid black ;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn hover {
+    background-color: #1f84f0;
 }

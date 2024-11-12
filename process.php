@@ -5,10 +5,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $date = htmlspecialchars($_POST['date']);
     $seats = (int)$_POST['seats'];
 
-    echo "<h2>Pesanan Anda Berhasil!</h2>";
-    echo "<p>Nama: $name</p>";
-    echo "<p>Penerbangan: $flight</p>";
-    echo "<p>Tanggal Keberangkatan: $date</p>";
-    echo "<p>Jumlah Tiket: $seats</p>";
+    echo "<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Pesanan Anda Berhasil</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <div class='container'>
+            <h2>Pesanan Anda Berhasil!</h2>
+            <p>Nama : $name</p>
+            <p>Penerbangan : $flight</p>
+            <p>Tanggal Keberangkatan : $date</p>
+            <p>Jumlah Tiket : $seats</p>
+        </div>
+        <footer>
+            <h1>Terima kasih telah bergabung dengan layanan pemesanan tiket kami. Nikmati kemudahan perjalanan dengan berbagai penawaran menarik.</h1>
+            <p>2024 @pesawat.com</p>
+        </footer>
+    </body>
+    </html>";
 }
 ?>

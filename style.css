@@ -21,15 +21,19 @@ body {
     margin: 0;
     padding: 0;
 }
+.menu li {
+    display: inline;
+    margin: 0 15px;
+}
 .content {
     text-align: center;
     margin: 50px;
 }
 form {
     background-image: url(images/pswt.jpgs);
-    padding: 100px;
+    padding: 80px;
     border-radius: 50px;
-    box-shadow: 0 0 50px black;
+    box-shadow: 0 0 10px black;
     display: inline-block;
     margin-top: 15px;
 }
@@ -50,7 +54,4 @@ input, select {
     background-color: #007bff;
     text-decoration: none;
     border-radius: 5px;
-}
-.btn hover {
-    background-color: #1f84f0;
 }

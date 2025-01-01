@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <footer>
             <h1>Terima kasih telah bergabung dengan layanan pemesanan tiket kami. Nikmati kemudahan perjalanan dengan berbagai penawaran menarik.</h1>
-            <p>2024 @pesawat.com</p>
+            <p>2024-2025 @pesawat.com</p>
         </footer>
     </body>
     </html>";

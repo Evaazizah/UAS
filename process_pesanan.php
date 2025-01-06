@@ -15,6 +15,7 @@ $_SESSION['pesanan'] = $validpesanan;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Pesanan</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <nav class="menu">
@@ -46,7 +47,7 @@ $_SESSION['pesanan'] = $validpesanan;
                         <td><?= $p['tanggal']; ?></td>
                         <td><?= $p['jam']; ?></td>
                         <td><?= $p['jumlah_tiket']; ?></td>
-                        <td>Rp. <?= number_format($p['nama'], 0, ',', '.'); ?></td>
+                        <td>Rp. <?= number_format($p['total_harga'], 0, ',', '.'); ?></td>
                         <td>
                             <span class="time" data_endtime="<?= $p['waktu_pesan'] + 86400; ?>"></span>
                         </td>

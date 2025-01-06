@@ -21,6 +21,7 @@ $_SESSION['pesanan'] = $validpesanan;
         <ul>
             <li><a href="index.html">Beranda</a></li>
             <li><a href="index3.html">Pemesanan</a></li>
+            <li><a href="process_pesanan.php">Daftar Pesanan</a></li>
         </ul>
     </nav>
     <div class="content">

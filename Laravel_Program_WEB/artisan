@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Input\ArgvInput;
+use Symfony\Component\Console\Output\ConsoleOutput;
+
+define('LARAVEL_START', microtime(true));
+
+// Register the Composer autoloader...
+require __DIR__.'/vendor/autoload.php';
+
+// Bootstrap Laravel application
+$app = require_once __DIR__.'/bootstrap/app.php';
+
+// Create a console kernel
+$kernel = $app->make(\Illuminate\Contracts\Console\Kernel::class);
+
+// Prepare input and output for Artisan
+$input = new ArgvInput();
+$output = new ConsoleOutput();
+
+// Handle the command
+$status = $kernel->handle($input, $output);
+
+exit($status);

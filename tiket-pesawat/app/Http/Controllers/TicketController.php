@@ -25,9 +25,17 @@ class TicketController extends Controller
             'email' => 'required|email',
             'destination' => 'required',
             'departure_date' => 'required|date',
+            'origin_airport' => 'nullable|string|max:255', // Kolom baru
         ]);
 
-        Ticket::create($request->all());
+        Ticket::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'destination' => $request->destination,
+            'departure_date' => $request->departure_date,
+            'origin_airport' => $request->origin_airport ?? 'unknown', // Nilai default
+        ]);
+    
         return redirect()->route('tickets.index')->with('success', 'Ticket created successfully.');
     }
 
@@ -43,9 +51,17 @@ class TicketController extends Controller
             'email' => 'required|email',
             'destination' => 'required',
             'departure_date' => 'required|date',
+            'origin_airport' => 'nullable|string|max:255', // Kolom baru
         ]);
 
-        $ticket->update($request->all());
+        $ticket->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'destination' => $request->destination,
+            'departure_date' => $request->departure_date,
+            'origin_airport' => $request->origin_airport ?? $ticket->origin_airport, // Nilai default
+        ]);
+
         return redirect()->route('tickets.index')->with('success', 'Ticket updated successfully.');
     }
 

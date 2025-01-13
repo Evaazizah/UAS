@@ -9,7 +9,6 @@ class Ticket extends Model
 {
     use HasFactory;
 
-    // Tentukan kolom yang boleh diisi massal
     protected $fillable = [
         'name',
         'email',

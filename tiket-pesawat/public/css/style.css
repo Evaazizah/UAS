@@ -261,7 +261,7 @@ button, a {
 button:hover, a:hover {
     background-color: #0056b3;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px); /* Tombol terlihat naik sedikit */
+    transform: translateY(-2px); 
 }
 
 .action-buttons {
@@ -282,14 +282,13 @@ button:hover, a:hover {
 }
 
 td > div.delete-button-container {
-    display: inline-block; /* Mengubah tombol hapus menjadi inline */
-    margin-left: 10px; /* Memberi jarak antara tombol edit dan hapus */
+    display: inline-block; 
+    margin-left: 10px; 
 }
 
-/* Menyesuaikan tampilan tombol agar tidak bertabrakan */
 td > a {
     display: inline-block;
-    margin-right: 10px; /* Memberi jarak pada tombol edit */
+    margin-right: 10px; 
 }
 
 
